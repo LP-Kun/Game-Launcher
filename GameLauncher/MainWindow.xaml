@@ -1,0 +1,19 @@
+﻿<Window x:Class="GameLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameLauncher"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ContentRendered="Window_ContentRendered"
+        Title="Draugr Launcher" Height="576" Width="1080">
+    <Grid>
+        <Image Stretch="UniformToFill" Source="/Drg.png"/>
+        <TextBlock Name="VersionText" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="20" Foreground="White" Margin="0, 0, 5, 0" FontFamily="Yu Gothic UI Light"/>
+
+        <Button Name="PlayButton" Content="Launch Game" Click="PlayButton_Click" FontSize="28" FontWeight="Bold" Foreground="#DD3E3E3E" Margin="0,438,0,62" MinWidth="150" Background="#FF49D2FF" Padding="10,1,10,1" FontFamily="Yu Gothic UI Light" HorizontalAlignment="Center" Width="339" VerticalAlignment="Bottom" Height="42"/>
+        <ProgressBar Name="progressBar1" Height="40" Margin="100,520,100,0"  VerticalContentAlignment="Stretch" HorizontalContentAlignment="Center" VerticalAlignment="Bottom"/>
+        <TextBlock Name="label2" Margin="0,520,0,0" FontFamily="Yu Gothic UI Light" FontSize="15" TextAlignment="Center" VerticalAlignment="Bottom"  Height="21" RenderTransformOrigin="0.5,0.562">Progress Bar</TextBlock>
+    </Grid>
+</Window>

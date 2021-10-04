@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Draugr_Logo_CosmicVeil (1).ico</ApplicationIcon>
+    <PackageId>DraugrLauncher</PackageId>
+    <Authors>Ujjwal Prashar</Authors>
+    <Product>Draugr Launcher</Product>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <SignAssembly>false</SignAssembly>
+    <Company>Cosmic Veil Studio</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Draugr.png" />
+    <None Remove="Drg.png" />
+    <None Remove="images\icon1.ico" />
+    <None Remove="images\LauncherBackground.jpg" />
+    <None Remove="images\LauncherBackground.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Draugr.png" />
+    <Resource Include="Drg.png" />
+    <Resource Include="images\icon1.ico" />
+    <Resource Include="images\LauncherBackground.jpg" />
+    <Resource Include="images\LauncherBackground.png" />
+  </ItemGroup>
+
+</Project>
